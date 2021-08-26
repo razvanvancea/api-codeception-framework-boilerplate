@@ -4,6 +4,7 @@
         "codeception/module-rest": "^1.0.0",
         "codeception/module-phpbrowser": "^1.0.0",
         "ext-json": "*",
-        "fakerphp/faker": "^1.14.1"
+        "fakerphp/faker": "^1.14.1",
+        "codeception/module-db": "^1.1"
     }
 }

@@ -11,4 +11,4 @@ test_prod:
 	php vendor/bin/codecept run --html --env prod --debug
 
 test_local:
-	php vendor/bin/codecept run --html --env local
+	php vendor/bin/codecept run tests/PatchPaymentsCest.php --html --env local
