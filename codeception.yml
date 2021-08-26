@@ -1,0 +1,38 @@
+suites:
+  api:
+    actor: ApiTester
+    path: .
+    modules:
+      enabled:
+        - REST
+        - Db
+    env:
+      prod:
+        modules:
+          config:
+            REST:
+              url: https://qa-automation-practice.herokuapp.com/
+              depends: PhpBrowser
+      local:
+        modules:
+          config:
+            REST:
+              url: http://localhost:8000/
+              depends: PhpBrowser
+            Db:
+              dsn: 'mysql:host=127.0.0.1;port=3306;dbname=payments'
+              user: 'root'
+              password: 'Parola12#a'
+              #populate: true # run populator before all tests
+              #cleanup: false # run populator before each test
+              #dump: 'tests/_data/finaldump.sql'
+
+paths:
+  tests: tests
+  output: tests/_output
+  data: tests/_data
+  support: tests/_support
+
+settings:
+  shuffle: false
+  lint: true
