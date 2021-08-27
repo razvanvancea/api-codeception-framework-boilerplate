@@ -6,6 +6,12 @@
 - Composer
 - Visual Studio Code / PHPStorm (optional IDE)
 
+## Windows OS prerequisites setup
+- install https://sourceforge.net/projects/wampserver/
+- set Env Vars to path C:\wamp64\bin\mysql\mysql5.7.31\bin
+- install composer https://getcomposer.org/download/
+- set Env var to path C:\ProgramData\ComposerSetup\bin
+
 ## Installation
 ```html
 composer install
