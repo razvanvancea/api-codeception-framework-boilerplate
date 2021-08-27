@@ -8,7 +8,8 @@
 
 ## Windows OS prerequisites setup
 - install https://sourceforge.net/projects/wampserver/
-- set Env Vars to path C:\wamp64\bin\mysql\mysql5.7.31\bin
+- set Env Vars to path C:\wamp64\bin\mysql\mysql5.7.31\bin 
+- set Env vars to path C:\wamp64\bin\php\php7.4.9
 - install composer https://getcomposer.org/download/
 - set Env var to path C:\ProgramData\ComposerSetup\bin
 
