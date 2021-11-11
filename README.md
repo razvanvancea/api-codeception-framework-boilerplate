@@ -6,7 +6,7 @@
 - Composer
 - Visual Studio Code / PHPStorm (optional IDE)
 
-## Windows OS prerequisites setup
+## Windows OS prerequisites setup - example
 - install https://sourceforge.net/projects/wampserver/
 - set Env Vars to path C:\wamp64\bin\mysql\mysql5.7.31\bin 
 - set Env vars to path C:\wamp64\bin\php\php7.4.9
@@ -18,14 +18,14 @@
 composer install
 ```
 
-## Run Tests via CLI (using Makefile)
+## Run Tests via CLI - Linux/MacOS (using Makefile)
 ```html
-make test_local
+make test_prod
 ```
 
 ## Run Tests on Windows
 ```html
-vendor/bin/codecept.bat run --env local
+vendor/bin/codecept.bat run --html --env prod
 ```
 
 ### Run in Docker Container
@@ -40,15 +40,15 @@ php vendor/bin/codecept run --html --env prod
 
 ### XML Report
 ```html
-php vendor/bin/codecept run --xml --env local
+php vendor/bin/codecept run --xml --env prod
 ```
 
 ### Execute specific test suite only
 ```html
-php vendor/bin/codecept run tests/PostEmployeeCest.php --html --env local
+php vendor/bin/codecept run tests/PostEmployeeCest.php --html --env prod
 ```
 
-### Execute specific test scenario - 'getSpecificEmployeeTest' is the test name
+### Execute specific test scenario - 'getEmployeesWithToken' is the test name
 ```html
-php vendor/bin/codecept run tests:getSpecificEmployeeTest --html --env local
+php vendor/bin/codecept run tests:getEmployeesWithToken --html --env prod
 ```

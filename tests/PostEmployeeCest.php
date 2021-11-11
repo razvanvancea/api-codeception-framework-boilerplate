@@ -16,7 +16,7 @@ class PostEmployeeCest
      * Test scenario that creates a new employee
      */
     public function createEmployee(ApiTester $I, Example $example){
-        $requrestBody = array(
+        $requestBody = array(
             'email' => $example['email'],
             'firstName' => $example['fn'],
             'lastName' => 'Doe',
@@ -24,7 +24,7 @@ class PostEmployeeCest
         );
 
         $I->haveHttpHeader(Header::CONTENT_TYPE, 'application/json');
-        $I->sendPost('/api/v1/employees', $requrestBody);
+        $I->sendPost('/api/v1/employees', $requestBody);
         $I->seeResponseCodeIs(HttpCode::CREATED);
     }
 

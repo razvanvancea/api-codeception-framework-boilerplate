@@ -1,6 +1,6 @@
 <?php
 
-namespace data;
+namespace data\response;
 
 /**
  * Class GetSpecificEmployeeData

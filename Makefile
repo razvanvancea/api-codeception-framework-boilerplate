@@ -8,7 +8,7 @@ vendor: composer.json $(wildcard composer.lock)
 	@composer install
 
 test_prod:
-	php vendor/bin/codecept run --html --env prod --debug
+	php vendor/bin/codecept run --html --env prod
 
 test_local:
-	php vendor/bin/codecept run tests/PatchPaymentsCest.php --html --env local
+	php vendor/bin/codecept run --html --env local

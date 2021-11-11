@@ -1,7 +1,7 @@
 <?php
 
 use \Codeception\Util\HttpCode;
-use data\GetSpecificEmployeeData;
+use data\response\GetSpecificEmployeeData;
 
 /**
  * Class GetSpecificEmployeeCest
